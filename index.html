@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html data-page-node-id="jB1CTRY3NRrTqUhLvHYEnO" lang="zh-CN">
+<head data-page-node-id="gqQfuwuyFVCi8FfZh0bMsu">
+<script data-page-node-id="zIyZB87UTHW8DbYFebwXu7" src="/page/page_comm/inject.js"></script>
+<meta data-page-node-id="hZRFsdKdugUEzybREQ0Je1" charset="UTF-8">
+<meta data-page-node-id="uL0zZIJqhgTydi42SdNYcH" content="width=1200" name="viewport">
+<title data-page-node-id="wx6od2zuoSXXcXg2EDnM6K" data-pnid-children="pYdUOLzTpYLuyqylodJ3AZ">陈设律师 · 个人品牌网站</title>
+<!--pnid:Ga6323i4ZwJNm3qbrm7Y2V--><!-- 字体：如离线/无外网，自动回退到系统衬线/无衬线字体 -->
+<link data-page-node-id="YtqQk1f3A1NPUxGMtDUUXp" href="https://fonts.googleapis.com" rel="preconnect">
+<link data-page-node-id="NezhJIAwkGlhIJ1dSZGawE" crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+<link data-page-node-id="42IRSoYs2cR4ejtIADM5s4" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700;900&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+<style data-page-node-id="oBNLZ1LIvhcopWbVuowswQ" data-pnid-children="G6fgOiDi7cmbU7nPbBliWS">
+  /* ============ 设计变量（按需修改配色） ============ */
+  :root{
+    --navy:#14233B;        /* 深海蓝-主色 */
+    --navy-deep:#0E1A2C;   /* 更深蓝-页脚/联系区 */
+    --gold:#B8945A;        /* 金-点缀 */
+    --gold-soft:#C9A877;
+    --warm:#FBF7F1;        /* 暖白-主背景 */
+    --beige:#F6F3EC;       /* 浅米-交替背景 */
+    --ink:#1F2A38;         /* 正文深字 */
+    --gray:#5B6573;        /* 辅助灰字 */
+    --line:#E8E0D4;        /* 描边 */
+    --white:#FFFFFF;
+    --maxw:1200px;         /* PC 主内容宽度 */
+    --serif:"Noto Serif SC", "Songti SC", "SimSun", serif;
+    --sans:"Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:var(--sans);
+    color:var(--ink);
+    background:var(--warm);
+    line-height:1.7;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 48px;}
+  section{padding:96px 0;}
+  h1,h2,h3{font-family:var(--serif);color:var(--navy);line-height:1.3;}
+  a{text-decoration:none;color:inherit;}
+  .eyebrow{color:var(--gold);font-weight:500;letter-spacing:.08em;font-size:14px;}
+
+  /* ============ 顶部导航 ============ */
+  .nav{
+    position:sticky;top:0;z-index:50;
+    background:rgba(255,255,255,.92);backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav .wrap{display:flex;align-items:center;height:72px;gap:40px;}
+  .brand .name{font-family:var(--serif);font-weight:700;font-size:20px;color:var(--navy);}
+  .brand .sub{font-size:10px;color:var(--gray);letter-spacing:.05em;}
+  .nav-links{display:flex;gap:34px;margin-left:40px;flex:1;}
+  .nav-links a{font-size:14px;color:var(--ink);transition:color .2s;}
+  .nav-links a:hover{color:var(--gold);}
+  .btn{
+    display:inline-block;padding:11px 22px;border-radius:8px;font-weight:500;font-size:14px;
+    cursor:pointer;transition:transform .2s,box-shadow .2s;border:none;
+  }
+  .btn-gold{background:var(--gold);color:#fff;}
+  .btn-gold:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(184,148,90,.35);}
+  .btn-outline{border:1px solid var(--navy);color:var(--navy);background:transparent;}
+  .btn-outline:hover{background:var(--navy);color:#fff;}
+
+  /* ============ 首屏 Hero ============ */
+  .hero{background:var(--warm);}
+  .hero .wrap{display:grid;grid-template-columns:1.4fr .65fr;gap:60px;align-items:center;min-height:560px;}
+  .hero .photo{max-width:300px;margin-left:auto;}
+  .hero h1{font-size:46px;font-weight:900;margin:14px 0 22px;}
+  .hero p.lead{font-size:16px;color:var(--gray);max-width:560px;margin-bottom:30px;}
+  .hero .btns{display:flex;gap:16px;margin-bottom:38px;}
+  .trust{display:flex;gap:40px;}
+  .trust .num{font-family:var(--serif);font-size:30px;font-weight:700;color:var(--navy);}
+  .trust .lbl{font-size:13px;color:var(--gray);}
+  /* 照片占位（后续替换为您的职业照 / 可放 <img> 或视频） */
+  .photo{
+    width:100%;aspect-ratio:4/4.2;border-radius:16px;overflow:hidden;
+    border:1px solid var(--gold);
+    background:linear-gradient(135deg,#eef1f6,#dfe5ee 55%,#e9e2d6);
+    display:flex;align-items:center;justify-content:center;color:var(--gray);font-size:14px;text-align:center;
+  }
+
+  /* ============ 版块标题 ============ */
+  .sec-head{margin-bottom:48px;}
+  .sec-head .en{font-size:13px;letter-spacing:.18em;color:var(--gold);font-weight:500;}
+  .sec-head h2{font-size:34px;font-weight:700;margin:8px 0 10px;}
+  .sec-head .desc{color:var(--gray);font-size:15px;}
+
+  /* ============ 横幅（水彩背景图 + 内嵌中英文 slogan） ============
+     提示：三张 banner 图中的「ROOTED IN EXPERTISE, DEDICATED TO YOUR SUCCESS /
+     立足专业，致力于您的成功」已渲染在图中；如需修改 slogan，请替换对应图片。 */
+  .banner{
+    border-radius:12px;overflow:hidden;position:relative;
+    background-size:cover;background-position:center;
+    margin-bottom:40px;
+  }
+  .banner-about{
+    aspect-ratio:1120 / 160;
+    background-image:url('assets/banner-about.jpg');
+  }
+  .banner-honors{
+    aspect-ratio:1120 / 180;
+    background-image:url('assets/banner-honors.jpg');
+  }
+  .banner-contact{
+    aspect-ratio:1120 / 160;
+    background-image:url('assets/banner-contact.jpg');
+  }
+
+  /* ============ 关于我 ============ */
+  .about{background:var(--white);}
+  .about .cols{display:grid;grid-template-columns:1.3fr .9fr;gap:56px;align-items:start;}
+  .about .bio{font-size:16px;color:var(--ink);margin-bottom:28px;}
+  .creds{list-style:none;display:grid;gap:14px;margin-top:8px;}
+  .creds li{padding:14px 18px;background:var(--beige);border-radius:10px;font-size:14px;}
+  .creds li b{color:var(--navy);}
+  .keys{margin-top:22px;font-size:14px;color:var(--gray);line-height:2;}
+  .keys .tag{display:inline-block;background:#fff;border:1px solid var(--line);border-radius:20px;padding:4px 14px;margin:4px 6px 0 0;color:var(--ink);}
+
+  /* ============ 荣誉与资质 ============ */
+  .honors{
+    position:relative;
+    background:
+      linear-gradient(rgba(255,255,255,.25), rgba(255,255,255,.25)),
+      url('assets/bg-honors.jpg') center / cover no-repeat;
+  }
+  .honor-grid{display:flex;gap:40px;justify-content:center;flex-wrap:wrap;}
+  .honor-card{
+    width:340px;height:340px;background:#fff;border:1px solid var(--line);border-radius:16px;
+    padding:32px;display:flex;flex-direction:column;justify-content:space-between;
+    transition:transform .35s ease,box-shadow .35s ease;cursor:pointer;position:relative;
+  }
+  .honor-card:hover{transform:translateY(-10px);box-shadow:0 18px 40px rgba(20,35,59,.16);}
+  .honor-card .no{font-family:var(--serif);font-size:40px;font-weight:900;color:var(--gold);}
+  .honor-card .ttl{font-family:var(--serif);font-size:22px;font-weight:700;color:var(--navy);margin-top:6px;}
+  .honor-card .honor-list{list-style:none;margin-top:18px;display:grid;gap:10px;}
+  .honor-card .honor-list li{
+    font-size:14px;color:var(--gray);padding-left:16px;position:relative;line-height:1.5;
+  }
+  .honor-card .honor-list li::before{
+    content:"·";position:absolute;left:0;color:var(--gold);font-weight:700;
+  }
+  .honor-card .more{display:flex;align-items:center;gap:8px;color:var(--gold);font-size:14px;font-weight:500;}
+  .honor-card .cursor{
+    width:22px;height:22px;opacity:0;transform:translateX(-6px);transition:opacity .3s,transform .3s;
+  }
+  .honor-card:hover .cursor{opacity:1;transform:translateX(0);}
+  .hint-note{margin-top:28px;font-size:13px;color:var(--gray);text-align:center;background:rgba(255,255,255,.55);padding:10px 18px;border-radius:8px;display:inline-block;left:50%;position:relative;transform:translateX(-50%);}
+
+  /* ============ 通用卡片网格 ============ */
+  .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+  .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;}
+  .card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:28px;transition:transform .25s,box-shadow .25s;}
+  .card:hover{transform:translateY(-6px);box-shadow:0 14px 30px rgba(20,35,59,.10);}
+  .card .no{font-family:var(--serif);font-weight:900;color:var(--gold);font-size:20px;}
+  .card h3{font-size:19px;margin:6px 0 10px;}
+  .card p{font-size:14px;color:var(--gray);}
+  .card .link{display:inline-block;margin-top:14px;color:var(--gold);font-size:14px;font-weight:500;}
+  .card .tag{display:inline-block;font-size:12px;color:var(--gold);background:#FBF4E9;border-radius:6px;padding:3px 10px;margin-bottom:12px;}
+
+  /* ============ 专业文章 ============ */
+  .articles{background:var(--beige);}
+  .article .meta{font-size:12px;color:var(--gold);margin-bottom:8px;}
+  .article h3{font-size:18px;margin-bottom:8px;}
+  .article p{font-size:13px;color:var(--gray);}
+
+  /* ============ 法律服务产品 ============ */
+  .price{background:#fff;border:1px solid var(--line);border-radius:16px;padding:32px;display:flex;flex-direction:column;}
+  .price.feature{background:var(--navy);color:#fff;border-color:var(--navy);}
+  .price.feature h3,.price.feature .price-num{color:#fff;}
+  .price .badge{align-self:flex-start;background:var(--gold);color:#fff;font-size:12px;padding:3px 12px;border-radius:20px;margin-bottom:14px;}
+  .price h3{font-family:var(--serif);font-size:20px;margin-bottom:8px;}
+  .price-num{font-family:var(--serif);font-size:26px;font-weight:700;color:var(--navy);margin-bottom:18px;}
+  .price ul{list-style:none;display:grid;gap:10px;font-size:14px;color:var(--gray);flex:1;}
+  .price.feature ul{color:#D9DEE7;}
+  .price .btn{text-align:center;margin-top:22px;}
+
+  /* ============ 客户评价 ============ */
+  .quote{background:var(--white);border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:12px;padding:30px;}
+  .quote p{font-size:16px;color:var(--ink);font-family:var(--serif);}
+  .quote .who{margin-top:16px;color:var(--gray);font-size:14px;}
+
+  /* ============ 常见问题 ============ */
+  .faq{background:var(--beige);}
+  .faq details{border-bottom:1px solid var(--line);padding:18px 4px;}
+  .faq summary{font-size:16px;font-weight:500;color:var(--navy);cursor:pointer;list-style:none;display:flex;justify-content:space-between;}
+  .faq summary::-webkit-details-marker{display:none;}
+  .faq summary::after{content:"+";color:var(--gold);font-size:22px;line-height:1;}
+  .faq details[open] summary::after{content:"−";}
+  .faq .ans{margin-top:12px;color:var(--gray);font-size:14px;}
+
+  /* ============ 联系委托（深色） ============ */
+  .contact{background:var(--navy-deep);color:#fff;}
+  .contact .sec-head h2{color:#fff;}
+  .contact .sec-head .desc{color:#C7CEDA;}
+  .contact .cols{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start;}
+  .contact .intro{font-size:16px;color:#C7CEDA;margin-bottom:28px;}
+  .contact .info{list-style:none;display:grid;gap:16px;font-size:15px;margin-bottom:28px;}
+  .contact .info li{display:flex;gap:12px;align-items:center;}
+  .contact .info .k{color:var(--gold-soft);min-width:54px;}
+  .contact .btn-gold{margin-top:8px;}
+  /* 预约表单卡片 */
+  .form-card{
+    background:#fff;border-radius:16px;padding:32px;color:var(--ink);
+    box-shadow:0 20px 50px rgba(0,0,0,.25);
+  }
+  .form-card h3{font-family:var(--serif);font-size:20px;color:var(--navy);margin-bottom:22px;}
+  .form-card label{display:block;font-size:13px;color:var(--gray);margin-bottom:6px;}
+  .form-card input,.form-card textarea{
+    width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:8px;
+    font-family:var(--sans);font-size:14px;color:var(--ink);background:#FAFAFA;outline:none;
+  }
+  .form-card input:focus,.form-card textarea:focus{border-color:var(--gold);background:#fff;}
+  .form-card textarea{min-height:110px;resize:vertical;}
+  .form-card .field{margin-bottom:16px;}
+  .form-card .btn-gold{width:100%;text-align:center;margin-top:4px;}
+
+  /* ============ 页脚 ============ */
+  .footer{background:var(--navy-deep);color:#8A93A3;padding:52px 0 36px;border-top:1px solid rgba(255,255,255,.08);}
+  .footer .wrap{display:flex;flex-direction:column;gap:26px;}
+  .footer .top{display:flex;justify-content:space-between;align-items:flex-start;gap:40px;flex-wrap:wrap;}
+  .footer .brand{display:flex;flex-direction:column;gap:8px;max-width:420px;}
+  .footer .brand .name{font-family:var(--serif);font-size:22px;color:#F5F0E6;font-weight:600;letter-spacing:1px;}
+  .footer .brand .org{font-size:13px;color:#A9B2C0;}
+  .footer .links{display:flex;gap:48px;flex-wrap:wrap;}
+  .footer .links .col{display:flex;flex-direction:column;gap:10px;}
+  .footer .links .col h4{font-size:13px;color:var(--gold);font-weight:600;letter-spacing:1px;margin:0 0 2px;}
+  .footer .links .col a{font-size:13px;color:#9AA3B2;text-decoration:none;transition:color .2s;}
+  .footer .links .col a:hover{color:#F5F0E6;}
+  .footer .divider{height:1px;background:rgba(255,255,255,.08);}
+  .footer .disclaimer{font-size:12px;line-height:1.9;color:#7C8696;}
+  .footer .copy{font-size:12px;color:#6F7888;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;}
+
+  /* ============ 滚动渐显动效（荣誉卡等） ============ */
+  .reveal{opacity:0;transform:translateY(36px);transition:opacity .7s ease,transform .7s ease;}
+  .reveal.in{opacity:1;transform:none;}
+  .reveal.d1{transition-delay:.12s;}
+  .reveal.d2{transition-delay:.24s;}
+
+  @media (max-width:1100px){
+    .wrap{padding:0 24px;}
+    .hero .wrap,.about .cols,.contact .cols{grid-template-columns:1fr;}
+    .grid-3{grid-template-columns:repeat(2,1fr);}
+    .honor-card{width:100%;max-width:340px;}
+  }
+</style>
+</head>
+<body data-page-node-id="XFHyxV1EsJoEZfmGssZ3s2">
+
+<!--pnid:K1Go2W1ORrEDsiQKEdFzJT--><!-- ===================== 顶部导航 ===================== -->
+<header data-page-node-id="vGF0MuxMoEM28yBTLwIBOK" class="nav">
+  <div data-page-node-id="6zwTDGCnJmlIlbwmO48Zfb" class="wrap">
+    <div data-page-node-id="D4GbrOO0UW9rOF6o2C0wsS" class="brand">
+      <div data-page-node-id="xmWey4AqadWx2AlwtIrOxZ" class="name"><!--pnid:NoG7jLH08WvgG753rP9SQE-->陈设律师</div>
+      <div data-page-node-id="DtyGECyc80ZFxgLxMyIv5n" class="sub"><!--pnid:0ecnpz5dw7egm1DvYu8PMI-->ARTHUR CHEN · 广州执业律师</div>
+    </div>
+    <nav data-page-node-id="OcQhgdm9HqTGN1G0KAb7Th" class="nav-links">
+      <a data-page-node-id="t3I3iJd33EVRXDxhttUi5S" href="#about"><!--pnid:CsNHDmi8jBaKWgQd3bvCJF-->关于我</a>
+      <a data-page-node-id="VIXFvyCSyYEEMVhHtlAv1b" href="#honors"><!--pnid:ncE8qYAts8F9dEjymbD9Dj-->荣誉与资质</a>
+      <a data-page-node-id="DXM3hy0sX0Bo3EPDLkdSV3" href="#practice"><!--pnid:GeBWdiWv1SmsooRFc0Z6tu-->专业领域</a>
+      <a data-page-node-id="ZbYBicc6KLHTK6OqWWau39" href="#cases"><!--pnid:WsZ9KcyNa09gZB6nDvb99n-->经典案例</a>
+      <a data-page-node-id="oYMjR200VWbwBj3u7FY7DD" href="#articles"><!--pnid:J6PyuKZ8ZOARU8kxo5vLuS-->专业文章</a>
+      <a data-page-node-id="jeLLjKCcSHfAUL133ANN2z" href="#services"><!--pnid:ZPxaB6sI6HGDG6ulktS08t-->法律服务</a>
+      <a data-page-node-id="uoCKHJcOYY5SDeJW1a57IE" href="#faq"><!--pnid:2kfPS2zdKldnKdjpb3iJQF-->常见问题</a>
+    </nav>
+    <a data-page-node-id="wXb29bizPHnmt6BxYkge7k" class="btn btn-gold" href="#contact"><!--pnid:TjTXmFZ3bRxMyn59c6vx7q-->欢迎咨询</a>
+  </div>
+</header>
+
+<!--pnid:DFP2rdGR3QvBOkdYnvldee--><!-- ===================== 首屏 Hero ===================== -->
+<section data-page-node-id="c4v4EsonTgeF9RgRooUATV" class="hero" id="top">
+  <div data-page-node-id="niRFHDS52Zpt4rekU0ki5E" class="wrap">
+    <div data-page-node-id="YGEionFy0wcAGTOlaZiBUx" class="hero-text">
+      <div data-page-node-id="jVOLTZVxl674uveQUkfYjd" class="eyebrow"><!--pnid:oQVRzcxBdqxfZrBmCz4k7M-->广州 · 民商事争议解决·投融资·资本市场</div>
+      <h1 data-page-node-id="1sXskYLWEn3Sj3PLT5t9QE"><!--pnid:Lb638lkmdlTtE3qoMhedJJ-->专注民商事争议解决<br data-page-node-id="mTUuXnpWOaUaYmLfc4H9gL"><!--pnid:NdDzyFaBHqnMkGaPxwYC6i-->为企业与个人保驾护航</h1>
+      <p data-page-node-id="ieFt8Os1ybw210ZIbDnT9f" class="lead"><!--pnid:JiRWnHAbfIr9uFTFbyBDqQ-->13年执业经验，深耕合同、股权、债权债务与公司法律顾问领域。以结果导向的专业服务，帮您把法律风险转化为可掌控的商业决策。</p>
+      <div data-page-node-id="nW03nOuGNL8bWpUnlqCa2O" class="btns">
+        <a data-page-node-id="sP6N80JlFQvR8LoyOp6MpM" class="btn btn-gold" href="#contact"><!--pnid:nyqlGRzVmGq7fjRQZ7XYxa-->点我咨询</a>
+        <a data-page-node-id="CJeeSM4KMs13vteupy8t9X" class="btn btn-outline" href="#cases"><!--pnid:d4pbLZdhqaXY7OXAT7xO8I-->查看经典案例</a>
+      </div>
+      
+    </div>
+    <div data-page-node-id="3THcsFwK9seZgrXxKOsaLh">
+      <img data-page-node-id="SPJHs0wm2Sy7ty2rQidVj3" alt="陈设律师" class="photo" src="assets/portrait-hero.jpg" style="object-fit:cover">
+    </div>
+  </div>
+</section>
+
+<!--pnid:IFCPJjDFE2ngl3ETxLF8xZ--><!-- ===================== 关于我 ===================== -->
+<section data-page-node-id="9hDY2XBZRfGzVLALq3kxTQ" class="about" id="about">
+  <div data-page-node-id="OvnKNRO3pCcGidW0faKZ4S" class="wrap">
+    <!--pnid:20EBs2VbF9qPBowPgRnjfc--><!-- 装饰 banner：图中已内嵌 slogan "立足专业，致力于您的成功" -->
+    <div data-page-node-id="y1aWHMdDO5z7XxbXwbqiB4" class="banner banner-about"></div>
+    <div data-page-node-id="DHNGXPCUhUn1oOU8ikhdP6" class="sec-head">
+      <div data-page-node-id="yAcHKDz1Xm2eU4ZLxstMXm" class="en"><!--pnid:pxNKiR8heEGDrLf95J9X7c-->ABOUT ME</div>
+      <h2 data-page-node-id="aNMlqfwih00aJPgDWiDRCt"><!--pnid:q1ohZ1qI2vPFdzkh0x7LZz-->关于陈设律师</h2>
+      <div data-page-node-id="Jol3zpJ5j8QxD55c10lEMh" class="desc"><!--pnid:pdDQa2MhJYHI12EOARVBI8-->以专业与诚意，成为您可信赖的法律伙伴</div>
+    </div>
+    <div data-page-node-id="r28SSMXlO496CFaRS8TvrG" class="cols">
+      <div data-page-node-id="wIvGzbWTml6sOb1Bv3oDKd">
+        <p data-page-node-id="vTJsOgJsKkJQp2DQCYNjD1" class="bio"><!--pnid:ljp361FpYXO2nly3U2kbMx-->陈设律师，广州执业律师，清华大学法学学士，执业十三年，现为北京市隆安（广州）律师事务所合伙人律师（非登记合伙人）。既服务上市公司、大型国企，亦服务于中小企业、创业者与各类个人客户。在重大民商事诉讼与仲裁、公司常年法律顾问、投融资、公司治理与股权纠纷、资本市场及合同风险控制领域积累了丰富的实战经验。</p>
+        <p data-page-node-id="1bq6uxfAnBpJxNBkVqR2kh" class="bio"><!--pnid:tvCY1nOfRMxkUb3ijIesjs-->秉持「立足专业，致力于您的成功」的执业理念，善于在复杂商业关系中识别风险、设计交易结构，并以可执行的方案帮助客户实现商业目标。</p>
+        <ul data-page-node-id="YlSPrbvQTr9wnOdUhSvbIa" class="creds">
+          <li data-page-node-id="1OGCXyRyQAYGic1ux7LRxH"><b data-page-node-id="jGfIWyNUAHc8nj5a6jlpiW"><!--pnid:73G1bkvoJ4pdFjMNlZ3ng5-->执业机构：</b><!--pnid:3R0dZpnkUylSnsLW61lF0Z-->北京市隆安（广州）律师事务所 · 合伙人律师（非登记合伙人）</li>
+          <li data-page-node-id="36QZXUW2M2cjIiIw3h9qeO"><b data-page-node-id="XqIGQo8k18uVjjNQqUvqAd"><!--pnid:8EqnaWeIifAkADp3QZEW3J-->执业证号：</b><!--pnid:EF54WKiJll6IqBr7ysAYTs-->14401201310092867</li>
+          <li data-page-node-id="rT11gWJbHAytxdfa2pFQpb"><b data-page-node-id="nP7VP9nf1kW5Gf3hIzWake"><!--pnid:MddM0VjW7b5Y8MpHgjIE7W-->教育背景：</b><!--pnid:dooSDTn8za12p6bnuK3hGT-->清华大学 法学学士</li>
+          <li data-page-node-id="9OhwtEC3aQyCSURM7tkoNR"><b data-page-node-id="E1hDpMFIY5w55pLkD0Gv6O"><!--pnid:CJzVV4NGztaNX306iCIFy3-->社会职务：</b><!--pnid:jaXJMJTmxSLvMhBxvtLboA-->中科创客学院导师、华南理工大学法学院法律硕士实践课程实务讲师、广州市海珠足球协会理事（兼）</li>
+        </ul>
+      </div>
+      <div data-page-node-id="fbcUSp2a6ww0JV9vA0STM9">
+        <img data-page-node-id="fHirIbFTrqf5eo8yytCy0n" alt="陈设律师" src="assets/portrait-about.jpg" style="width:100%; height:auto; aspect-ratio:2/3; max-height:520px; object-fit:cover; object-position:center top; border-radius:16px; border:1px solid var(--gold); display:block; margin-bottom:20px">
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--pnid:o8W6ojF2Zi1rbKGwl8eH3d--><!-- ===================== 荣誉与资质 ===================== -->
+<section data-page-node-id="ILld3plZeMzywUak3xwR4i" class="honors" id="honors">
+  <div data-page-node-id="rmGokLIcEmtNngb8K7vDF4" class="wrap">
+    <!--pnid:VjNVm70C2bC6TZf1u5u88L--><!-- 装饰 banner：图中已内嵌 slogan -->
+    <div data-page-node-id="JkfLKWJRVQuwQWm2KjVbAv" class="banner banner-honors"></div>
+    <div data-page-node-id="VeZn0U4Hkl3Zugi6y5t0vD" class="sec-head">
+      <div data-page-node-id="DZ6T2NP3wQBpJSmruMAQwD" class="en"><!--pnid:jveaKHUlGhd6XFrElGsRAI-->HONORS &amp; QUALIFICATIONS</div>
+      <h2 data-page-node-id="HCFo5yxXdNdmQVNVOGe4jD"><!--pnid:eQwvyI6NorN083ghQIS84U-->荣誉与资质</h2>
+      <div data-page-node-id="VhBztwwblwobLk7L9SayhD" class="desc"><!--pnid:lEc3CTqDSxBNocpNMDtBi5-->专业认可与社会信任，是持续做好每一份委托的注脚</div>
+    </div>
+    <div data-page-node-id="7oE2VODlz3HYtjI1CzdAtr" class="honor-grid">
+      <div data-page-node-id="95MT4Kf1zv1LnlUgGQ32KT" class="honor-card reveal">
+        <div data-page-node-id="ThNrkOl0eYLqKKxYHCZXOs">
+          <div data-page-node-id="mDeScrBGChrARIXSMtCuaL" class="no"><!--pnid:PwSTGueKIlrEcHQ0tH8WYB-->01</div>
+          <div data-page-node-id="MCp7NUDwxu8Wbl7g3Xk3kH" class="ttl"><!--pnid:km63qwM12kra1tigYnfyv6-->专业资质</div>
+          <ul data-page-node-id="Yg9bLpFfr1vYvZjiHuSvUe" class="honor-list">
+            <li data-page-node-id="MMbR8JinfTcbJ8BJtkKwDx"><!--pnid:zLQkl10GcYFWlqVS5jXCas-->隆安广州合伙人</li>
+            <li data-page-node-id="HShWHOn25nqplLMepHbjs8"><!--pnid:Ahqo13ggPmNYPxOfVkCUbz-->清华大学法学毕业</li>
+            <li data-page-node-id="hlIp4jZNFXLUTyLp2zem1d"><!--pnid:B3uEWyUCVjmU3L5aSZ7o1P-->十三年民商事争议解决经验</li>
+          </ul>
+        </div>
+        
+      </div>
+      <div data-page-node-id="SnLdDcCD4sBOSqLM1vdRPk" class="honor-card reveal d1">
+        <div data-page-node-id="7qDYS4UitSgQXHYFCzEnTU">
+          <div data-page-node-id="8VSMu2g2zDm4pb2kxhgexH" class="no"><!--pnid:CpfasqIQnqJdNoj7jNrTC0-->02</div>
+          <div data-page-node-id="B801Tn7u0h015NdoCS3dUI" class="ttl"><!--pnid:dxVdwjwmFcpAVe5NKH6Evd-->荣誉</div>
+          <ul data-page-node-id="wlnD0KAaTXFvbaITFqrjRI" class="honor-list">
+            <li data-page-node-id="yUBg6Hwg3nyeVSK7G5D9AJ"><!--pnid:AU7wEHpeXHI9zh57TXknTT-->多次被律所评为优秀合伙人、优秀律师</li>
+            <li data-page-node-id="XpGFXV9CQmT9uPs4USsJob"><!--pnid:b5ORqMCY2uExZTQ73zLhAr-->立法建议被全国人大法工委采纳</li>
+            <li data-page-node-id="l9JraIZRDPpWpKWdAbHXka"><!--pnid:BoyzxYwQ8skgG2ortlHqND-->服务多家知名企业、高校</li>
+          </ul>
+        </div>
+        
+      </div>
+      <div data-page-node-id="wnMLdQVkHOA4Flii6ffk7Q" class="honor-card reveal d2">
+        <div data-page-node-id="ws6jdDbHMEyMHBpedUJgX1">
+          <div data-page-node-id="v6wHCiyRKlLEabg9GJ8KVL" class="no"><!--pnid:JmxLj4SvnO06iQozpugWNf-->03</div>
+          <div data-page-node-id="DmRo8wvQifr1AYz8x7YMCm" class="ttl"><!--pnid:IxN8Ijz0Ew0Sa4APq0Fam6-->社会职务</div>
+          <ul data-page-node-id="NCJiJf7Mb8feUUXGSPGGS0" class="honor-list">
+            <li data-page-node-id="MIB2zIlrF1Bsd2sHdX5FrN"><!--pnid:bXw3ifFJEuUkHoTWAJ3Yc3-->中科创客学院商业导师</li>
+            <li data-page-node-id="o7w4XGirLOnzysS0xWV4D3"><!--pnid:h5pfv7xcHvaaHegJ9dkbLL-->华南理工大学法学院法律硕士实践课程实务讲师</li>
+            <li data-page-node-id="fu79r23KD5LBbAk8yAyBE6"><!--pnid:eg7LnxJUssmTOT4OhlE0tK-->广州市海珠足球协会理事（兼）</li>
+          </ul>
+        </div>
+        
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+<!--pnid:M3mzslTh9euIoOwb5jV7Vl--><!-- ===================== 专业领域 ===================== -->
+<section data-page-node-id="zbGuHLIOxDWcVuEJG1f4c0" id="practice">
+  <div data-page-node-id="GxztD0oxT6LL5KXPPoDtCE" class="wrap">
+    <div data-page-node-id="fLCA3rlnxIaVibZKo7CtcM" class="sec-head">
+      <div data-page-node-id="ZyOKu8J0KdSr5RaxxL3tZ3" class="en"><!--pnid:aQpdqsw2dt1UCiV5JkHUuz-->PRACTICE AREAS</div>
+      <h2 data-page-node-id="ebqceYf4052eO6ooCQ2ZQS"><!--pnid:KBdF1fei7Ix4cZRDGy1aWS-->专业领域</h2>
+      <div data-page-node-id="s4MVyOHBCg7rr9gz5Lv0yN" class="desc"><!--pnid:AqOw04lPE1MID3YWqqP57i-->覆盖企业全生命周期各项法律事务与个人重大法律事务，提供专业支持</div>
+    </div>
+    <div data-page-node-id="IH2oh1Walmv5wHH4LsybcW" class="grid-3">
+      <div data-page-node-id="hsWtzOgE9Mq46vRWnVDiuQ" class="card reveal"><div data-page-node-id="ZASWvhjOEcJEpxe5vY3JTm" class="no"><!--pnid:BgAkl6uPrkNlg4aYXYXDI3-->01</div><h3 data-page-node-id="BsyW34HDKFCxRQf7t8HTT4"><!--pnid:fqItcMY457izQZVxVrWgPD-->重大民商事诉讼与仲裁</h3><p data-page-node-id="Nu4eutdM5RBYygTT7s4fUW"><!--pnid:bHfqaSWnzfj8Wr4YLUM44i-->代理合同、股权、投融资、公司治理等重大民商事纠纷的一审、二审、再审及仲裁程序。</p></div>
+      <div data-page-node-id="adrs7QxeFdr285X3wn5fvG" class="card reveal d1"><div data-page-node-id="6wN1xAEBullgMviIputapx" class="no"><!--pnid:ZdYEnxPc0YNJlXk0SP3yOO-->02</div><h3 data-page-node-id="gEl7NWpKZd2DXv4bj6ycDs"><!--pnid:xgcNspiSVRW0gmhdxOIDER-->公司常年法律顾问</h3><p data-page-node-id="ScJLFwwUdZqQILVExGCQ6N"><!--pnid:dAUPiMV2nzx0jkoHJNycAO-->为企业日常经营提供合规支持、制度搭建、合同模板、劳动用工及经营风险全流程把控。</p></div>
+      <div data-page-node-id="pLxKxDeKEXpWlvL5M3rqCL" class="card reveal d2"><div data-page-node-id="Gqpo6CeVOCLf6k86ggr8YM" class="no"><!--pnid:E9hLlJyMTicEYEM3vR1sfY-->03</div><h3 data-page-node-id="gmbwyTD5XrWiyLoVZgWOe7"><!--pnid:HHN4zeynK1WGLxQEBoJncr-->投融资</h3><p data-page-node-id="8Cz1DIHpoFp14SXSSUaRMM"><!--pnid:N5Q7PBKRBA2BWwTLEIu2a0-->投融资尽职调查、交易文件起草与审查、交割协助及投后争议处理。</p></div>
+      <div data-page-node-id="rNNERT9Rx0pMFQ00aKK3qY" class="card reveal"><div data-page-node-id="6rMLF4aDLByssT37XnVZsZ" class="no"><!--pnid:vfg8OZbqclIZTf16botIdG-->04</div><h3 data-page-node-id="4IcMN5drJ77lwUIvpBrPBN"><!--pnid:4KdtRpvTvR9lDWb9WrxxrP-->公司治理与股权纠纷</h3><p data-page-node-id="sg24UHyZd3C3WOA5dX39fq"><!--pnid:nJIIk5Bbo4RcYMXjIPf0ZF-->股权架构设计、股权激励、股东争议、公司决议效力及控制权安排等综合法律服务。</p></div>
+      <div data-page-node-id="m4dThilaGpVllgXIcFMydI" class="card reveal d1"><div data-page-node-id="MRfmWbCy1Ekj3miALfXs1o" class="no"><!--pnid:keAy8WtZ6ga0HWHvry7X2j-->05</div><h3 data-page-node-id="XWDDTFzqRRxd481kVZXE78"><!--pnid:TOCQtRJds9q4k9FGYfGwK0-->资本市场</h3><p data-page-node-id="pKh36GcklSqmmZIFQlqhDc"><!--pnid:16TizyV119FNAxy60SflPo-->为企业上市、新三板挂牌、上市公司重组、再融资、债券发行等事务提供专业支持。</p></div>
+      <div data-page-node-id="u7zntow2h2u7cQbyoKDtoZ" class="card reveal d2"><div data-page-node-id="kofJRDxBjoiZs4nIvBLssQ" class="no"><!--pnid:qXyDOkJN3EEhsEAv0QgAo3-->06</div><h3 data-page-node-id="kq4vt5ub3OGPXD76KUcVYo"><!--pnid:GoEE5BeJoZWccl6LXc8JxU-->合同起草、审查及风险控制</h3><p data-page-node-id="v6FPNA03NbLCSAXbxUYaXK"><!--pnid:xbpvbXJRT5MciMyzYQXDdh-->起草审核交易文件，识别履约与违约风险，前置化解潜在争议，保障交易安全。</p></div>
+    </div>
+  </div>
+</section>
+
+<!--pnid:LlEEPN24FoVHbj8gCvf2A1--><!-- ===================== 经典案例 ===================== -->
+<section data-page-node-id="KORGZ8hHC1gD9QhxRz2b7D" class="about" id="cases">
+  <div data-page-node-id="JFM9JNW1RTmEo4hEmYNicb" class="wrap">
+    <div data-page-node-id="BBrquvWwHjFbETnPZgNbIK" class="sec-head">
+      <div data-page-node-id="Sy3SALWYC0qrL16evAnJ6V" class="en"><!--pnid:8HbzZoHSJezijGSiomOz76-->SELECTED CASES</div>
+      <h2 data-page-node-id="HnRu3GBfP4Aq9TZJdikjDH"><!--pnid:75JwA1LOG7hUcmqmGd5DFG-->经典案例</h2>
+      <div data-page-node-id="LJpWqxdJxIKekok1JVTHOw" class="desc"><!--pnid:lY3m4waBE7IeFVNoGB0QHc-->以下案例仅展示代理思路与结果方向</div>
+    </div>
+    <div data-page-node-id="59rJDRvYnnHk1Adcsu2Poi" class="grid-3">
+      <div data-page-node-id="dTRRIIlYdW1ol60wrn5jca" class="card reveal">
+        <span data-page-node-id="pvRrZN6LRA3SPUUPTNIM3f" class="tag"><!--pnid:LADJMNii2qE5vHb8QeKCOL-->合同纠纷 · 标的 1.2 亿元</span>
+        <h3 data-page-node-id="EtQoOC7vZz2heFZpDyz6ob"><!--pnid:WF5CqlmuiS0jTb8x7qRayI-->代理某房地产公司与某土发中心合同纠纷案</h3>
+        <p data-page-node-id="G54LFcGqrwFmlkiXFdgRMx"><b data-page-node-id="jAwjlP1ksMbamAwXBNRkmE" style="color:var(--navy)"><!--pnid:a0m9vO6KvMGebTt45woIMu-->案情：</b><!--pnid:0puoaQjjqvRueOJKbwTLtR-->房地产公司未按约定时间交付配建物业，被法院判决支付将近 9000 万元违约金。</p>
+        <p data-page-node-id="PiXX6lgW49sihcpCQcN3dJ" style="margin-top:8px"><b data-page-node-id="EolLfWXdFZTzmk6ggHjGjk" style="color:var(--navy)"><!--pnid:U6OAcTGGgfqjV8XnSqGkv3-->代理结果：</b><!--pnid:bpgj5LVBZnxBudhP9bD5cH-->二审成功为该房地产公司减少违约金 6000 多万元。</p>
+      </div>
+      <div data-page-node-id="CXIiGcoQ8e4ZPazD93eCwk" class="card reveal d1">
+        <span data-page-node-id="Q9jphPPUDX32ObnSClFV6Q" class="tag"><!--pnid:TqDZgj8DiYBstmhfMd5OgA-->股权融资 · 交易 150 亿元</span>
+        <h3 data-page-node-id="7DbB4eKqLlU5R5MuAPbzXr"><!--pnid:OFDrqs9wEoxfmo6w7NUAxS-->某省交通集团 — 人保资本债权投资计划股权融资项目</h3>
+        <p data-page-node-id="ZveGp9YCMAkioMtm5bj5QW"><b data-page-node-id="sJRkS6Mdck0IcQaFF38jBc" style="color:var(--navy)"><!--pnid:v1IDQuHFlGxKfcAwXiq63Q-->案情：</b><!--pnid:1zVcD35g325HAvogV0C7yO-->人保集团拟发行债权投资计划，总规模 150 亿元，主要投资于某省高速公路项目。</p>
+        <p data-page-node-id="eLbdeHoVXX3XfbXXsXFHmU" style="margin-top:8px"><b data-page-node-id="YbZDnSUl0P1wU4V42CH2bp" style="color:var(--navy)"><!--pnid:j71UICTiCBWEJJ3HX0O9m9-->委托事项：</b><!--pnid:UHAMY7IF81gVlt3PTv8AiY-->代表某省交通集团起草、审核相关融资协议，参加各方谈判。</p>
+      </div>
+      <div data-page-node-id="AMo7WfIDKknAswe2o2lhs2" class="card reveal d2">
+        <span data-page-node-id="ittjxatBR1cVuxO8MNL3lg" class="tag"><!--pnid:yALvnSyiRMPLFEOaOepCJv-->IPO 上市 · 北交所</span>
+        <h3 data-page-node-id="Bdw8IRWjoOr5CkMWmSeRpA"><!--pnid:evk3iOWWdg2haeJMvhI7CQ-->纬达光电 — 北交所上市</h3>
+        <p data-page-node-id="6YmCyCIKpY3x4mBTnXmbji"><b data-page-node-id="eV8oVZpYUK2MYMMw4jZ0TL" style="color:var(--navy)"><!--pnid:gtaDDl4W2wpmF1vGOWsp81-->案情：</b><!--pnid:CqXsRCQKeKkL3CpXlcTNAz-->省属广新集团下属纬达光电拟申请在北交所上市。</p>
+        <p data-page-node-id="KdIQy9eeq9LZF7R0GQzkYj" style="margin-top:8px"><b data-page-node-id="yfjcDVrl0GlgkpgALcKyu1" style="color:var(--navy)"><!--pnid:cgNZgQBwmeW7ahbEFdSeSK-->结果：</b><!--pnid:1ujXBqBXv2CN0Uap7CJ4Cb-->作为发行人律师，协助纬达光电在较短时间内实现上市目标。</p>
+      </div>
+      <div data-page-node-id="eiN91uYbOu3ViTnzRPpiQK" class="card reveal">
+        <span data-page-node-id="6TBpH0kpmlO0YW5oeMmp8m" class="tag"><!--pnid:uQBbJqMIYaYvYOP36JjGor-->侵害商标权纠纷</span>
+        <h3 data-page-node-id="Y7u1pZCT3oe05vh7s6p02p"><!--pnid:lUSvVYmlzOS2WncqvPYfLS-->代理某知名学校与某教育文化公司侵害商标权纠纷案</h3>
+        <p data-page-node-id="lrxXVwzqHVIUxUt013MfCa"><b data-page-node-id="ffvQY2hfcIccCo2x8b1Z1X" style="color:var(--navy)"><!--pnid:7O3wmW5PdB4V5MV5Ezn0Ok-->案情：</b><!--pnid:XvxnJPO0gOC7HtOC9vuOGY-->某文化公司未经授权使用名校已注册商标为其开班课程进行宣传。</p>
+        <p data-page-node-id="rNZFqlFNFlThwtrWoQFNVe" style="margin-top:8px"><b data-page-node-id="WQYnNr30UBMSsY9jiCheys" style="color:var(--navy)"><!--pnid:zgE1ULUkS6zVTpzDybaeWq-->代理结果：</b><!--pnid:Ox2WbdTSoULjEQrzU1Vcod-->法院认定侵权，判决赔偿经济损失及合理开支。</p>
+      </div>
+      <div data-page-node-id="cIhIQ58AElMuzzmn25WHKJ" class="card reveal d1">
+        <span data-page-node-id="ZkuHscqNIemcJqHtyLXtqx" class="tag"><!--pnid:9lMsXyZ6YnBB2OZyQIvPNm-->股权架构设计</span>
+        <h3 data-page-node-id="tOtez65olnUpq687icZD0r"><!--pnid:XktX671cuN7J5LHny4Mwp1-->某创业者合资设立公司股权架构设计</h3>
+        <p data-page-node-id="2RYQqiUt69C52liiN2o6st"><b data-page-node-id="dT62mv6bbF9sVztRVDPadu" style="color:var(--navy)"><!--pnid:9ZEpSPbAtjj9h3V8XF8Lj9-->背景：</b><!--pnid:ftlc7fWos73T0ZLFM81o7m-->某创业者拟与合作伙伴合资设立公司，希望从税务、上市等角度设计股权架构。</p>
+        <p data-page-node-id="EKs1oJyQKeoDa4viCBrNId" style="margin-top:8px"><b data-page-node-id="69794pPLrduRs2korCinhT" style="color:var(--navy)"><!--pnid:N3s00n3XXNndqQdezvh5Wz-->委托事项：</b><!--pnid:Va0a2IKByvyMkVAW67FphP-->多角度考虑设计股权架构，起草相关协议、公司章程。</p>
+      </div>
+      <div data-page-node-id="tGowkQfrqzod6Pzplm5WNx" class="card reveal d2">
+        <span data-page-node-id="2wqS0YKwMe9XjzcOMW1A3X" class="tag"><!--pnid:CeozdrZevcjfINSyeQv4GD-->法律尽职调查</span>
+        <h3 data-page-node-id="qfgYkmsjYEDGSSO9nXTm0q"><!--pnid:dmENxADjKZuP594709rw95-->某私募股权基金投资标的法律尽职调查</h3>
+        <p data-page-node-id="n2kFeWGfo2f9NmZUalXZsM"><b data-page-node-id="SMBvRmLRb0mIZsUG8etZm1" style="color:var(--navy)"><!--pnid:1YYLCK7eiZcmvO7XPoXqmD-->背景：</b><!--pnid:9JozeTimMfiP6WPZAhYi1z-->某私募股权基金拟投资某上市公司子公司，委托进行调查。</p>
+        <p data-page-node-id="XjO5XgpWvrbf3UFhqESd7F" style="margin-top:8px"><b data-page-node-id="7VxJhqbOrqjT8nLfFqCNW1" style="color:var(--navy)"><!--pnid:aUVwBm6BJaNfvh44S2u9Pl-->结果：</b><!--pnid:SGXt08FGMejoDIj69A3VYt-->调查发现问题，报告供客户决策最终不予投资；不久该子公司爆雷财务造假，上市公司面临证券虚假陈述诉讼。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--pnid:LbY5d27MJqaZw09o5jhvR3--><!-- ===================== 专业文章 ===================== -->
+<section data-page-node-id="5iI9EY87kFfqClgQbmIe8I" class="articles" id="articles">
+  <div data-page-node-id="17pj1oMx0ZkIinQGCbrUGC" class="wrap">
+    <div data-page-node-id="xxV6HRDGFSpwOiItaffjIe" class="sec-head">
+      <div data-page-node-id="kZMOtGux4CqweX1B6tTxOg" class="en"><!--pnid:ipRkK2cJcLwNx4XtmM0PKl-->ARTICLES &amp; INSIGHTS</div>
+      <h2 data-page-node-id="mGhP9AwILq7BVbqUySpOsZ"><!--pnid:VsDNpDYzxVORzFuLD0Qvyq-->专业文章</h2>
+      <div data-page-node-id="LGRUr8Gju7EtnOt6nx67XY" class="desc"><!--pnid:1BS91i6gwitPlC5zDSjAeV-->持续输出实务观点，也是 AI 搜索中建立专业信任的关键内容</div>
+    </div>
+    <div data-page-node-id="GDQQB11yO7N86m1c2Yi2kS" class="grid-3">
+      <div data-page-node-id="KVnrIsqiWTPfdFjwxQhhqb" class="card article reveal"><div data-page-node-id="OAKcNs1rjAnGoTCnUPb7Ps" class="meta"><!--pnid:O3N5eJg6QOZLCU16fdnsno-->刑事实务 · 2009 · 收录出版</div><h3 data-page-node-id="sNbTmsEs8xiEDlCXBBMElB"><!--pnid:ZKKss24olSA2mryR6x0ta3-->窃取他人借记卡信息并冒用的行为性质</h3><p data-page-node-id="2kPUARfyiApPK9qMDYjxWY"><!--pnid:Pr08byNi2NlX2qK69ICdTj-->收录于《刑事疑案演习》一书，中国人民大学出版社出版。对银行卡类犯罪的行为定性及法律适用进行实务分析。</p></div>
+      <div data-page-node-id="1vZVqOYWNBqUmDjcbwfRVx" class="card article reveal d1"><div data-page-node-id="yP2JPBXG8AGc3JVLSKkcws" class="meta"><!--pnid:bkdrMyWtNiou5r5LuKDroN-->资本市场 · 2013 · 收录出版</div><h3 data-page-node-id="9t1sxhGChSRiR4GES37U64"><!--pnid:fIQTk09qgFSkh0sRRoYrxG-->上市公司大股东重大资产重组承诺问题浅析</h3><p data-page-node-id="onj4eJDHbC1HrhVXrWoMCg"><!--pnid:jinHZvejK2EI1zt4dFvpLz-->收录于《中伦律师实务丛书——资本市场业务》一书，法律出版社出版。探讨重大资产重组中承诺履行的法律问题。</p></div>
+      <div data-page-node-id="RmHE3uQbaFMjiUNTUsbt2A" class="card article reveal d2"><div data-page-node-id="XE5C8HwCxML79IGl2aydTj" class="meta"><!--pnid:yQrEmjQHqe4ANdfdgTKdj4-->国企案例 · 2014 · 收录出版</div><h3 data-page-node-id="jOUh4y41KOcHeBPGYeXKz6"><!--pnid:wxZgKrnG2w66JUXlPECgBc-->长期购销合同是否成立案</h3><p data-page-node-id="E1BojFddmV3ZRQECtorQRS"><!--pnid:UyPjXQG0w1eK6wPQwxvlaX-->收录于《广东省属国企法律案例汇编（二）》。通过典型案件梳理长期购销合同成立要件及争议解决思路。</p></div>
+    </div>
+  </div>
+</section>
+
+<!--pnid:SxIKX0XI3KAxT5ITiueaM9--><!-- ===================== 法律服务产品 ===================== -->
+<section data-page-node-id="VAN0A9p1JHgIhmdoewCO7p" id="services">
+  <div data-page-node-id="LnukKB1dFO2kBa0j24RBxV" class="wrap">
+    <div data-page-node-id="DuNvf9yRgrjzJ8retoFjWn" class="sec-head">
+      <div data-page-node-id="DcN2UJHAkoZJuA4P7CQ72k" class="en"><!--pnid:uzW4bGGXzGRwzBcftQGtPV-->LEGAL SERVICE PRODUCTS</div>
+      <h2 data-page-node-id="sGi0FZf7auKF0Cw71g72NT"><!--pnid:UX2ORwquo1UY4nnLqHPwdE-->法律服务产品</h2>
+      <div data-page-node-id="AN6qbiN3ECjDoidfvN8Kt2" class="desc"><!--pnid:x4FRNFZtfIIo1cllyGFxMO-->把法律服务做成清晰可预期的产品，让委托决策更简单</div>
+    </div>
+    <div data-page-node-id="7avPUTZUOGBoEuq77v0KP5" class="grid-3">
+      <div data-page-node-id="h4gnhAkyFCILDA0zluli3x" class="price reveal">
+        <h3 data-page-node-id="ZBcf5UQFofHwa4Xmn1BkzZ"><!--pnid:WHqUcXAJ7V1NJfXOWYgq9e-->个人法律咨询包</h3>
+        <div data-page-node-id="2ojqhXC0C8c2dtEnIDxZ1b" class="price-num"><!--pnid:SBqLUAFQbyKagTqM3ih2lv-->¥699 / 次</div>
+        <ul data-page-node-id="Ty8kuwdcTzpsx07hQRWqE7">
+          <li data-page-node-id="1DOcVKtXuX2CnusfR7mmbh"><!--pnid:ASodmuxnnEGQCun1FVM6p1-->· 对应半小时律师工作</li>
+          <li data-page-node-id="5tDv7Mjp4yp197K7hO88dp"><!--pnid:QHyGefMUuw42obDWMZHAbV-->· 30 分钟电话咨询</li>
+          <li data-page-node-id="Up7LmVnPF6cVHCVYLFMCLA"><!--pnid:OqCOOKOn1OBuzwHxPe8ySQ-->· 法律风险分析</li>
+          <li data-page-node-id="ZKnoPiuPzi6M2S5Aboxzj8"><!--pnid:2tZHjg4YgFgmyxAbLXJzKV-->· 法律文书审核</li>
+        </ul>
+        <a data-page-node-id="a9zffTrDh9bLDHjP2RLrc2" class="btn btn-outline" href="#contact"><!--pnid:tTue1G6Q9wLJG403pR9nAq-->立即咨询</a>
+      </div>
+      <div data-page-node-id="MUMG5FYbjx5WyIVaJvqGLa" class="price feature reveal d1">
+        <span data-page-node-id="Kh4lsDfac9IU6ezDz7kfJM" class="badge"><!--pnid:rdTddYoqUYd2ZaRfMGMqx4-->★ 推荐</span>
+        <h3 data-page-node-id="k3W0XJqiIRbTp0jkWK8u9R"><!--pnid:KKBeSfbkw6iZfo83OQViVo-->企业常年法律顾问</h3>
+        <div data-page-node-id="gVgI4ZENuzk3gIgRgBgDyD" class="price-num"><!--pnid:ol6Cii1hPdETMsExcb9lr3-->¥30,000 / 年起</div>
+        <ul data-page-node-id="tCGAISgN6r7v3gmAISiUmB">
+          <li data-page-node-id="T5MYmIZri8QRAMdkVY3y99"><!--pnid:nVVLYqCGzxkRqFksYBcwYW-->· 合同模板与审查</li>
+          <li data-page-node-id="ZZXzIxlIo86l0qhnNUoHL7"><!--pnid:L9hCp1vA754cXVoOujV98l-->· 解答日常法律咨询</li>
+          <li data-page-node-id="nRfiQ5HZFAcgrhZ1Dig8SV"><!--pnid:B4OFOsFbYP4gcF5ehfcLbQ-->· 业务风险防范</li>
+          <li data-page-node-id="KUdUXmsXqdH25YrI6AEmLy"><!--pnid:EyGzAIilr2EHmMWfUyQ7Lu-->· 法律培训与劳动合规支持</li>
+        </ul>
+        <a data-page-node-id="03zpLHeVoEmdmQvWWXLMLH" class="btn btn-gold" href="#contact"><!--pnid:AGE4PRIPqfTJQDW7klPD2D-->预约顾问</a>
+      </div>
+      <div data-page-node-id="oeCPOpsxV89tW5cJOCZyfy" class="price reveal d2">
+        <h3 data-page-node-id="5HLxxgqS6rdj8fAnCJjKyX"><!--pnid:iESnPQDI1zYHhBV93jL8ji-->专项法律服务</h3>
+        <div data-page-node-id="6OqMkOIjA1Hatwmudjai2j" class="price-num"><!--pnid:xQmvHjb8f28hTGE65bxn0t-->按需报价</div>
+        <ul data-page-node-id="YLduM7WrQrT3WQ2VHnJWhj">
+          <li data-page-node-id="zUGxrW1Lg6QkvrSbiv3Cy5"><!--pnid:DejJgRcLdY6OV6iqmjJwfH-->· 诉讼/仲裁案件代理</li>
+          <li data-page-node-id="FB6rOg4cHQsv8RhueECxLZ"><!--pnid:eA0NYOb4PsOdmqwU9b8XOg-->· 投融资尽职调查</li>
+          <li data-page-node-id="IiTTQMvlXo1OeWsHraIdN4"><!--pnid:dSpinihv7FWtSUuyPCeZVN-->· 股权设计、股权激励</li>
+          <li data-page-node-id="DqheV7whcmCZyDwuB9mgmK"><!--pnid:77N1FQmGCLXpymjGnawWSh-->· 出具法律意见书</li>
+        </ul>
+        <a data-page-node-id="v74BocmW5UevCtKawMJfgR" class="btn btn-outline" href="#contact"><!--pnid:FdFFlOjnVUlJtVSq0iyRFx-->了解详情</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--pnid:WCOxfoCAxeoqfpfU15ZZer--><!-- ===================== 客户评价 ===================== -->
+<section data-page-node-id="u1VBDtTUizc00uZP2kA4jd" class="about" id="clients">
+  <div data-page-node-id="sgiGsvVadHa6Eiw9w0SYUo" class="wrap">
+    <div data-page-node-id="kbUmdlIceoBZ9mBMFdyzAc" class="sec-head">
+      <div data-page-node-id="YfHX9PkEgsVs4heoME8821" class="en"><!--pnid:w36vqljMdNBQuqxjNbaIux-->CLIENT VOICES</div>
+      <h2 data-page-node-id="rb10cvRxSTprK85sOYeRTP"><!--pnid:6tz9U3AeVYUhxyRbusS2Ni-->客户评价</h2>
+      <div data-page-node-id="OxPURwkowFECimJHqvImyW" class="desc"><!--pnid:0psSwszRhv9wvzo6myukxk-->来自企业客户与当事人的真实反馈（均经授权使用）</div>
+    </div>
+    <div data-page-node-id="0f8nHSXE0hRZknhs5cbhHE" class="grid-2">
+      <div data-page-node-id="fl9z4eagWNa3FhqVOEwGxw" class="quote reveal"><p data-page-node-id="TnL9iGaAhG67QZtRCPL4ZH"><!--pnid:IwB9ovzJ0dLDE3SdgyFeKt-->"陈律师在我向发包人追工程款的案件中思路清晰、反应迅速，维护了当事人的合法权益，是真正站在客户立场思考的律师。"</p><div data-page-node-id="VeK9qPwyuy1w0EUzGS86ZF" class="who"><!--pnid:jsVsNndg9PxU3PBPJ8wMLT-->— 某施工队 负责人</div></div>
+      <div data-page-node-id="WUNMwKseJjPMACvhUNM6Gg" class="quote reveal d1"><p data-page-node-id="NxHOmVfAOqhIL2FiTQrvHx"><!--pnid:Hw84BsOffe3ivDsprFSTV2-->"常年顾问服务让我们少走了很多弯路，合同风险变得可控，团队的专业与靠谱让我们很安心。"</p><div data-page-node-id="yqNNKIpAjaCfarwjEF3rpe" class="who"><!--pnid:DcxMPgdF2PsVsXhPV5PO3r-->— 某智造企业 总经理</div></div>
+    </div>
+  </div>
+</section>
+
+<!--pnid:n9xAHkuaq9fxnQ2cSriIjG--><!-- ===================== 常见问题 ===================== -->
+<section data-page-node-id="tym6o3n5JV1EGNCbibKUMy" class="faq" id="faq">
+  <div data-page-node-id="kq7HUL3x1RF1m3QXNVNmL0" class="wrap">
+    <div data-page-node-id="xjBiIXLVf3welN3TYPY5s5" class="sec-head">
+      <div data-page-node-id="En2s524kQgwWpYIzyUcaUR" class="en"><!--pnid:tWQwWvlg4LrEiDknWIpLgE-->FAQ</div>
+      <h2 data-page-node-id="GQOn5KpfMXlRne4vNPuzj5"><!--pnid:z9U7f58s6rCCRqplfinjYG-->常见问题</h2>
+      <div data-page-node-id="yKleWfSg5ebDVR1xUXaDGR" class="desc"><!--pnid:AI28Tnks1VeywL6LYE9cQy-->委托前您可能关心的问题，这里先给您答案</div>
+    </div>
+    <details data-page-node-id="KcDNzBkmBGJ5V0cmnlFSD1" open><summary data-page-node-id="DfCSdb4Ht1PonVdX0MpVeD"><!--pnid:YH1jxRtFmpkjy9qVRQL3If-->Q1　第一次咨询需要付费吗？</summary><div data-page-node-id="cbVZT4YtF7pYqfn3we1fej" class="ans"><!--pnid:W1nkhRNaENrByUeW7BnfAl-->首次 15 分钟电话沟通免费，用于初步判断事项是否属于我的专业范围；正式委托后再按标准收费。</div></details>
+    <details data-page-node-id="ZYlCZl4ENTY9eZe0r3iw5A"><summary data-page-node-id="t5oOdjugp6psK4thriYVzS"><!--pnid:NcveJcxtnumE3iJ5rVKVK3-->Q2　律师费一般怎么收取？</summary><div data-page-node-id="0BV3mU98bZ4KcrfM7RTWgx" class="ans"><!--pnid:HQw0mXcTbiETGkDmQQvTG8-->根据事项复杂程度，采用计时、计件或风险代理等方式，签约前会出具清晰的费用说明，绝无隐形收费。</div></details>
+    <details data-page-node-id="qHDwEDB4ZBAH4tqGIeyNSt"><summary data-page-node-id="birl5oHSXja0zUchQMWYfj"><!--pnid:Vy1ezSMiKa0Lx1vzwIynaV-->Q3　我的案件大概需要多久？</summary><div data-page-node-id="YHW2rklSeCQ3wQ5YmATJBS" class="ans"><!--pnid:JQpjkuKuAItyHj5G6CxBeS-->简单咨询即时反馈；诉讼案件视程序与法院排期，我会在每个节点主动同步进展。</div></details>
+    <details data-page-node-id="X4azum6oHgJZQPnI1E8aoR"><summary data-page-node-id="djqL2QIbC6nOU8AxsKdUvY"><!--pnid:6hKs3c2h6Lf0eLC51rzZ4S-->Q4　异地客户可以委托吗？</summary><div data-page-node-id="Udgm8LM0zer2LT47B7WmXH" class="ans"><!--pnid:Kw7hzl9Mlitxb3abmu6k4l-->可以。跨区域案件可通过线上会议、电子签约与邮寄材料处理，已服务多地客户。</div></details>
+    <details data-page-node-id="bShVPRvxPLBBRlEnG6us2Z"><summary data-page-node-id="GxIitrBL1QsEFN5TPgV60z"><!--pnid:lHgfNlGCmij5USgw6qqhsr-->Q5　如何判断我的案子是否有胜诉可能？</summary><div data-page-node-id="C1ioBFEUSKqxeNPDDNf9cS" class="ans"><!--pnid:uZXbgyoMMJKK6C1JZ8xLuf-->我会基于证据与现行法律做客观评估，不夸大、不承诺结果，但会给出务实的推进策略。</div></details>
+  </div>
+</section>
+
+<!--pnid:vxcorWv9tH4DrCeYBxGk97--><!-- ===================== 联系委托（深色） ===================== -->
+<section data-page-node-id="sbaa5H3yGihSazWdQhv9fR" class="contact" id="contact">
+  <div data-page-node-id="pls6452IBCx80Iam9ihxGa" class="wrap">
+    <!--pnid:LtZmZ8pbCK8E1VdGDUfFaV--><!-- 装饰 banner：图中已内嵌 slogan -->
+    <div data-page-node-id="OUBEtIbLxHprl4rgN14hus" class="banner banner-contact"></div>
+    <div data-page-node-id="jGquj04nKnobTsqCS6VZmY" class="sec-head" style="margin-bottom:32px">
+      <div data-page-node-id="BqWWOJejY3fp3FxCVCO3jV" class="en" style="color:var(--gold-soft)"><!--pnid:uTGViFNdMCw0E9jp5fSvwu-->CONTACT</div>
+      <h2 data-page-node-id="CE5ij1iAPPggVekMb5b829"><!--pnid:E5OB9788M69LQlCKIiw3qO-->现在就聊聊您的法律需求</h2>
+      <div data-page-node-id="C5uUkkEOVEUmrsuUWXIZal" class="desc"><!--pnid:f8GneVercwWeARxMmaxE53-->首次沟通免费，先帮您理清法律路径，再决定是否委托</div>
+    </div>
+    <div data-page-node-id="hCG2FLYnkF4PjBSB5p1ldM" class="cols">
+      <div data-page-node-id="L15kP1tqNZwZVyAo01oCkU">
+        <p data-page-node-id="UrXRPEMOEuISeCg3R9sKxt" class="intro"><!--pnid:Y9EbvLs5ZsXv62G9BlFnqp-->无论您是企业客户还是个人，欢迎就具体事项与我沟通。我将以专业与诚意，成为您可信赖的法律伙伴。</p>
+        <ul data-page-node-id="NMDcrM0yHdTqPZKw2OkB85" class="info">
+          <li data-page-node-id="0GDcg1vUawhEe6ZlreoHnJ"><span data-page-node-id="CgSWKKLViE8fsZdL3fqdtW" class="k"><!--pnid:5LwhztLdtvpUkq4Ic2Mlnt-->微信号</span><span data-page-node-id="6JnVDeCT8pKm6y9l4cD2R1"><!--pnid:oze7WcrP36aJTNyPmUSWKX-->扫码添加微信咨询</span></li>
+          <li data-page-node-id="yq0sekH72uCp58KxKkPlLu" style="align-items:flex-start; gap:12px"><img data-page-node-id="N8haBrgTEuZDhsUycsYMqy" alt="微信二维码" src="assets/wechat-qr.jpg" style="width:160px; height:160px; border-radius:10px; border:1px solid rgba(255,255,255,.15); background:#fff"></li>
+          <li data-page-node-id="ppxA7dRIygQgKWZhac5RXo"><span data-page-node-id="ERZwfxtvyW8d7S1ZqCfoV8" class="k"><!--pnid:a4nj9R8HWVvcwXf67bKcWV-->地址</span><span data-page-node-id="HoC4sstG6smgaHWSiTRjPZ" style="font-weight:700; white-space:pre-wrap"><!--pnid:1z2fmcCUBXL3n4hyXUK8dj-->广州市天河区体育西路103号维多利广场A座46楼
+欢迎预约上门咨询</span></li>
+        </ul>
+      </div>
+      <div data-page-node-id="vOfs26ttlgXAsYS93MGkOH" class="form-card reveal">
+        <h3 data-page-node-id="JY7yb90yDV4jArAQbnprUb"><!--pnid:h6ZMpMIHrsZlncsWqqWO22-->预约咨询</h3>
+        <!-- 腾讯问卷预约表：创建问卷后，把下方 href 替换为实际的问卷链接（如 https://wj.qq.com/s2/xxxx），即可在新标签页打开问卷并接收提交提醒 -->
+        <div data-page-node-id="cfCJXEhCdTBLCqJ1DKeoCR" style="text-align:center;">
+          <p data-page-node-id="koVqTFYkIaakCCGoyfv1KM" style="color:var(--gray);font-size:14px;line-height:1.7;margin-bottom:22px;">点击下方按钮填写预约咨询表，提交后我将收到提醒并与您联系。</p>
+          <a data-page-node-id="R4MlPBFoSIiZGGm5DDvZNg" href="https://wj.qq.com/s2/27720361/dfs9/" target="_blank" class="btn btn-gold" style="width:100%;"><!--pnid:I3fTv9C64Ef3nVbuEpgYpZ-->填写预约咨询表</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--pnid:ZBnrz0WmDzE4WtbNZVeo5s--><!-- ===================== 页脚 ===================== -->
+<footer data-page-node-id="3NwdR7g2GKExXp9wz44MLM" class="footer">
+  <div data-page-node-id="RNtU1BYQmh3pnBvuN9DHV8" class="wrap">
+    <div class="top">
+      <div data-page-node-id="bwXnbTAsBYP9DB9TrT1z45" class="brand">
+        <span class="name">陈设 律师</span>
+        <span class="org">北京市隆安（广州）律师事务所 · 合伙人律师</span>
+        <span class="org">执业证号：14401201310092867</span>
+      </div>
+      <div class="links">
+        <div class="col">
+          <h4>联系方式</h4>
+          <a href="mailto:chenshe@foxmail.com">邮箱：chenshe@foxmail.com</a>
+          <a href="#contact">微信：扫码添加咨询</a>
+          <a href="#contact">地址：广州市天河区体育西路103号维多利广场A座46楼</a>
+        </div>
+        <div class="col">
+          <h4>快捷导航</h4>
+          <a href="#about">关于我</a>
+          <a href="#practice">专业领域</a>
+          <a href="#cases">经典案例</a>
+          <a href="#contact">预约咨询</a>
+        </div>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div data-page-node-id="p7585b5NqNwWOZTLZe6qfa" class="disclaimer">免责声明：本网站内容仅用于一般性法律信息分享，不构成针对具体事项的法律意见，亦不形成委托关系。如遇具体法律问题，请另行咨询并签署正式委托协议。</div>
+    <div class="copy">
+      <span>© 2026 陈设律师 · 北京市隆安（广州）律师事务所</span>
+      <span>本网站仅为个人展示网站，待正式运营后备案</span>
+    </div>
+  </div>
+</footer>
+
+<script data-page-node-id="XQR9gYzxTJ7rXsOSCr03PN" data-pnid-children="K88HGcXsr4c0yPzVjoutqN">
+  /* 滚动渐显动效：为带 .reveal 的元素在进入视口时添加 .in */
+  (function(){
+    var els = document.querySelectorAll('.reveal');
+    if(!('IntersectionObserver' in window)){ els.forEach(function(e){e.classList.add('in');}); return; }
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target);} });
+    },{threshold:0.15});
+    els.forEach(function(e){ io.observe(e); });
+  })();
+</script>
+</body>
+</html>
